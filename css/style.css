@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E4EEF1;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background: #4B93BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 118px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1177px;
+    width: 100%;
+    list-style: none;
+}
+
+.options li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+    white-space: nowrap;
+}
+
+.options li a {
+    color: #E4EEF1;
+    font-size: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+h1 {
+    color: #E4EEF1;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+ul .logo a img {
+    padding-top: 25px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.about-winter-container {
+    height: 377px;
+    max-width: 1088px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-winter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-winter-text {
+    max-width: 587px;
+    color: #0F468C;
+    font-size: 20px;
+}
+
+.winter-in-Brazil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4B93BF;
+    height: 262px;
+
+}
+
+.winter-in-Brazil div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1048px;
+    width: 100%;
+}
+
+.winter-in-Brazil figure img {
+    object-position: -20px 10px;
+    width: 100%;
+}
+
+.winter-in-Brazil p {
+    color: #E4EEF1;
+    font-size: 32px;
+    max-width: 585px;
+}
+
+.animals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 377px;
+}
+
+.animals div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.animals figure img {
+    width: 100%;
+}
+
+footer {
+    background: #4B93BF;
+    height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1177px;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    max-width: 203px;
+    position: relative;
+    left: 60px;
+}
+
+footer ul li {
+    position: absolute;
+}
+
+footer ul .linkedin {
+    left: 25px;
+}
+
+footer ul .instagram {
+    left: 75px;
+}
+
+footer ul .github {
+    left: 125px;
+}
+
+.footer-container figure img {
+    position: relative;
+    right: 60px;
+}
+
+footer div p {
+    text-align: center;
+    color: #E4EEF1;
+    font-size: 20px;
+}
+
+@media (min-width: 1217px) {
+
+    footer {
+        background: #4B93BF;
+        height: 118px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 1215px) {
+    nav {
+        max-width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+       flex-direction: column;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    .about-winter-container {
+        max-width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-winter-container figure {
+        width: 100%;
+    }
+    .about-winter-container figure img {
+        width: 100%;
+    }
+
+    .about-winter-text {
+        max-width: 100%;
+    }
+
+    .winter-in-Brazil div {
+        
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .winter-in-Brazil  {
+        height: auto;
+    }
+
+    .winter-in-Brazil p {
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .winter-in-Brazil figure {
+        width: 100%;
+    }
+
+    .winter-in-Brazil figure img {
+        object-position: 0 10px;
+    }
+
+    .animals  {
+        height: auto;
+    }
+    .animals div {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .animals figure {
+        width: 100%;
+    }
+
+    footer {
+       height: auto;
+    }
+
+    footer ul {
+        max-width: 100%;
+    }
+    
+    footer .footer-container {
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: none;
+    }
+
+    footer .footer-container ul {
+        align-items: center;
+        left: 0;
+    }
+
+    footer .footer-container ul li {
+        position: relative;
+        left: 0;
+    }
+
+    .footer-container figure img {
+        right: 0;
+    }
+    
+
+    
+}
